@@ -52,8 +52,8 @@ class GamePlay:
 	"""
 	Стартовая точка лабиринта, логика перемещения
 	"""
-	default_Y_axis = 0#9
-	default_X_axis = 0#7
+	default_Y_axis = 0
+	default_X_axis = 0
 	default_selected_direction = int()
 
 	def __init__(self, **kwargs):
@@ -206,7 +206,7 @@ class Game_map(Action):
 		self.backward = kwargs.get('backward', self.default_backward)
 		self.la_fin = kwargs.get('la_fin', self.default_la_fin)
 
-	def labyrinth(self, ):
+	def labyrinth(self):
 		"""
 		Загрузка численного представления игрового поля
 		"""
